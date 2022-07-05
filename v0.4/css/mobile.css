@@ -1,0 +1,66 @@
+ /*   --------------------------   */
+/*   -----   MOBILE   -----   */
+
+
+    /*   -----   MEDIA >= 768px   -----   */
+    @media only screen and (min-width: 768px) {
+
+        #sidebar {
+            display: flex;
+        }
+
+        .small_box_container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 992px   -----   */
+    @media only screen and (min-width: 992px) {
+
+        .small_box_container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1200px   -----   */
+    @media only screen and (min-width: 1200px) {
+
+        .small_box_container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1400px   -----   */
+    @media only screen and (min-width: 1400px) {
+
+        .small_box_container {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1600px   -----   */
+    @media only screen and (min-width: 1600px) {
+
+        .small_box_container {
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1800px   -----   */
+    @media only screen and (min-width: 1800px) {
+
+        .small_box_container {
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+    }

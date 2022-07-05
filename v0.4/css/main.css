@@ -1,0 +1,132 @@
+:root {
+    /* Main colors */
+    --background_first: #e9ecef;
+    --background_second: #ffffff;
+
+    /* Main font colors */
+    --font_color_main: #676869;
+
+    /* Light colors */
+    --color_light_blue: #c3e0f7;
+    --color_light_green: #a8f0cc;
+    --color_light_yellow: #ffefce;
+    --color_light_gray: #95a4c8;
+    --color_light_red: #f6c6d3;
+
+    /* Strong colors */
+    --color_strong_blue: #548be9;
+    --color_strong_green: #5bc889;
+    --color_strong_yellow: #edbb57;
+    --color_strong_gray: #4e6f99;
+    --color_strong_red: #f66a83;
+
+    --border_radius: 6px;
+    --main_padding: 15px;
+}
+
+html {
+    background: var(--background);
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.collapse {
+    display: none!Important;
+}
+
+/*   ----             ANIMATED BUTTON           ----   */
+.animated_button {
+    transition: all .5s;
+}
+
+.animated_button:hover {
+    transform: scale(1.2);
+}
+
+.animated_button:active {
+    transform: scale(0.99);
+}
+
+
+
+ /*   ------------------------------------   */
+/*   ----             PAGE           ----   */
+#page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: var(--background_first);
+}
+
+#page a, h1, h2, h3, h4, h5, h6, p, span, i {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: var(--font_color_main);
+}
+
+
+
+ /*   ------------------------------------   */
+/*   ----       SIDE BAR - MAIN      ----   */
+#sidebar {
+    display: none;
+    height: 100vh;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--background_second);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*   ------------------------------------   */
+/*   ----       PAGE CONTENT        ----   */
+#page_content {
+    width: 100%;
+    overflow-y: auto;
+    padding: var(--main_padding);
+}
+
+/*   ----          PAGE TOP          ----   */
+#page_top {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: var(--background_second);
+    border-radius: var(--border_radius);
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    position: sticky;
+    top: 0px;
+    margin-bottom: var(--main_padding);
+}
+
+/*   ----          PAGE CONTENT          ----   */
+#page_bottom {
+    background: var(--background_first);
+}
+
+    /*   -----   PAGE SCROLL   -----   */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(244, 246, 246);
+        border-radius: 10px;
+        margin: var(--main_padding) 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(184, 186, 186);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(121, 123, 123);
+    }

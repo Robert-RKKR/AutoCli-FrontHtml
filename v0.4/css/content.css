@@ -1,0 +1,42 @@
+/*   ------------------------------------   */
+/*   ----       BOX CONTAINER       ----   */
+.small_box_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.box_item {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    border-radius: var(--border_radius);
+    box-sizing: border-box;
+}
+
+
+
+/*   ------------------------------------   */
+/*   ----        SUMMARY BOX        ----   */
+.summary_box_item {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    background: var(--background_second);
+    padding: var(--main_padding) 15%;
+    border-left: 5px solid var(--color_strong_blue);
+}
+
+.summary_title::after {
+    content: ':';
+}
+
+.summary_value {
+    padding-top: 10px;
+    color: var(--color_strong_blue);
+    font-size: 1.5em;
+}
+
+.summary_box_item i {
+    font-size: 30px;
+}

@@ -1,0 +1,139 @@
+ /*   ------------------------------------   */
+/*   ----             BOX            ----   */
+.box {
+    display: flex;
+}
+
+
+    /*   -----   BOX ITEM   -----   */
+    .box_item {
+        margin-bottom: var(--second_distance);
+        background-color: var(--color_background_second);
+        border-radius: 10px;
+        /* border: 1px solid rgba(0, 0, 0, 0.0625); */
+        box-shadow: 0.1rem 0.1rem 0.25rem #00000013, -0.1rem -0.1rem 0.25rem #00000013;
+    }
+
+    .box_item_top {
+        display: flex;
+        padding: var(--size_medium);
+    }
+
+    .box_item_content {
+        display: flex;
+        padding: var(--size_medium);
+    }
+
+    .box_item_bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items	: center;
+        padding: var(--size_medium);
+    }
+
+    /*   -----   COLLRS BOXES   -----   */
+
+        /*   -----   GREEN   -----   */
+        .green_box .box_item_top {
+            background: var(--color_strong_green);
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+
+/*   ------------------------------------   */
+/*   ----            TABLE           ----   */
+
+
+
+    /*   -----   TABLE SETTINGS   -----   */
+    .table {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+    }
+  
+    .row {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.0625);
+    }
+
+    .row_header {
+        border-bottom: 1px solid var(--color_font_second);
+    }
+  
+    .cell {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: var(--size_medium);
+        word-wrap: break-word;
+        min-width: 0px;
+    }
+
+    /*   -----   TABLE COLORS   -----   */
+
+        /*   -----   GREEN   -----   */
+
+    /*   -----   TABLE NAWIGATION   -----   */
+    
+    /*   -----   CELLS OPTIONS   -----   */
+    .cell_2 {
+        flex-grow: 2;
+    }
+
+    .cell_3 {
+        flex-grow: 3;
+    }
+
+    .cell_4 {
+        flex-grow: 4;
+    }
+
+    .cell_5 {
+        flex-grow: 5;
+    }
+
+
+
+ /*   ------------------------------------   */
+/*   ----           BUTTONS          ----   */
+
+
+
+    /*   -----   BUTTONS   -----   */
+    .button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        border: none;
+        padding: var(--size_medium);
+        cursor: pointer;
+        border-radius: 10em;
+    }
+
+    .button span {
+        margin-left: var(--size_small);
+    }
+
+        /*   -----   COLLRS BUTTONS   -----   */
+        .blue_button {
+            color: var(--color_strong_blue);
+            background: var(--color_light_blue);
+        }
+
+        /*   -----   BUTTONS ANIMATION   -----   */
+        .button {
+            transition: transform .3s;
+        }
+
+        .button:hover {
+            color: var(--color_font_white);
+            background: var(--color_background_animation);
+        }
+
+        .button:active {
+            transform: scale(0.9);
+        }
