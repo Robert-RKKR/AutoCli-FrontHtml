@@ -24,7 +24,6 @@
     justify-content: space-between;
     background: var(--background_second);
     padding: var(--main_padding) 15%;
-    border-left: 5px solid var(--color_strong_blue);
 }
 
 .summary_title::after {
@@ -33,10 +32,57 @@
 
 .summary_value {
     padding-top: 10px;
-    color: var(--color_strong_blue);
+    color: var(--color_strong_gray);
     font-size: 1.5em;
 }
 
 .summary_box_item i {
     font-size: 30px;
 }
+
+    /*   ----        SUMMARY BOX COLORS        ----   */
+
+        /*   ----        SUMMARY BOX COLORS BLUE        ----   */
+        .color_blue .summary_value {
+            color: var(--color_strong_blue);
+        }
+
+        .color_blue.summary_box_item {
+            border-left: 5px solid var(--color_strong_blue);
+        }
+
+        /*   ----        SUMMARY BOX COLORS GREEN        ----   */
+        .color_green .summary_value {
+            color: var(--color_strong_green);
+        }
+
+        .color_green.summary_box_item {
+            border-left: 5px solid var(--color_strong_green);
+        }
+
+        /*   ----        SUMMARY BOX COLORS YELLOW        ----   */
+        .color_yellow .summary_value {
+            color: var(--color_strong_yellow);
+        }
+
+        .color_yellow.summary_box_item {
+            border-left: 5px solid var(--color_strong_yellow);
+        }
+
+        /*   ----        SUMMARY BOX COLORS RED        ----   */
+        .color_red .summary_value {
+            color: var(--color_strong_red);
+        }
+
+        .color_red.summary_box_item {
+            border-left: 5px solid var(--color_strong_red);
+        }
+
+        /*   ----        SUMMARY BOX COLORS GRAY        ----   */
+        .color_gray .summary_value {
+            color: var(--color_strong_gray);
+        }
+
+        .color_gray.summary_box_item {
+            border-left: 5px solid var(--color_strong_gray);
+        }
