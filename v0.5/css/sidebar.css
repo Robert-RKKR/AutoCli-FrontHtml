@@ -1,0 +1,146 @@
+ /*   ------------------------------------   */
+/*   ----       SIDE BAR - LOGO      ----   */
+#page_logo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+#page_logo_img {
+    height: 60px;
+}
+
+#page_logo_title {
+    font-weight: 500;
+    padding: 0px 20px 20px 20px;
+    border-bottom: 1px solid var(--main_border);
+}
+
+
+ /* --------------------------------------   */
+/*   ----    SIDE BAR - MAIN MENU    ----   */
+#main_menu {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+    /*   ----     MAIN MENU     ----   */
+    .menu_item, .submenu_item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu_link, .submenu_link {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        width: 100%;
+        padding: 15px 40px 15px 15px;
+    }
+
+    .menu_item_info, .submenu_item_info {
+        position: relative;
+        margin-left: var(--main_padding);
+        background: var(--color_strong_red);
+        padding: 3px;
+        border-radius: 10em;
+        font-size: 10px;
+        transition: all .5s;
+    }
+
+    .menu_item_icon {
+        transition: all .5s;
+    }
+
+    .menu_item_text {
+        transition: all .5s;
+        padding-left: var(--main_padding);
+    }
+
+    .menu_link_submenu .menu_item_text::after {
+        content: ' »';
+    }
+
+    /*   ----     MAIN SUBMENU     ----   */
+    .main_submenu {
+        margin-left: 15px;
+    }
+
+    .submenu_item_icon {
+        transition: all .5s;
+    }
+
+    .submenu_item_text {
+        transition: all .5s;
+        padding-left: 10px;
+    }
+
+        /*   ----     ICONS COLORS     ----   */
+        .menu_item:nth-child(5n+1) .menu_item_icon {
+            color: var(--color_strong_blue);
+        }
+
+        .menu_item:nth-child(5n+2) .menu_item_icon {
+            color: var(--color_strong_green);
+        }
+
+        .menu_item:nth-child(5n+3) .menu_item_icon {
+            color: var(--color_strong_yellow);
+        }
+
+        .menu_item:nth-child(5n+4) .menu_item_icon {
+            color: var(--color_strong_gray);
+        }
+
+        .menu_item:nth-child(5n+5) .menu_item_icon {
+            color: var(--color_strong_red);
+        }
+
+        /*   ----     MENU ANIMATIONS     ----   */
+        .menu_item:hover .menu_link {
+            background: var(--background_first);
+            border-top-left-radius: 10em;
+            border-bottom-left-radius: 10em;
+            border-top: 1px solid var(--main_border);
+            border-bottom: 1px solid var(--main_border);
+            border-left: 1px solid var(--main_border);
+            padding: 14px 40px 14px 14px;
+        }
+
+        .menu_item:hover .menu_item_icon {
+            transform: translate(5px, 0px);
+        }
+
+        .menu_item:hover .menu_item_text {
+            transform: translate(5px, 0px);
+        }
+
+        .submenu_item:hover .submenu_item_icon {
+            transform: translate(5px, 0px);
+        }
+
+        .submenu_item:hover .submenu_item_text {
+            transform: translate(5px, 0px);
+        }
+
+        .menu_item:hover .menu_item_info {
+            transform: translate(5px, 0px);
+        }
+
+        .submenu_item:hover .submenu_item_info {
+            transform: translate(5px, 0px);
+        }
+
+
+
+ /*   ------------------------------------   */
+/*   ----      SIDE BAR - FOOTER     ----   */
+#sidebar_footer {
+    border-top: 1px solid var(--main_border);
+    text-align: center;
+}
+
+#sidebar_footer p {
+    padding: 15px;
+}

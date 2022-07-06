@@ -1,0 +1,201 @@
+/*   ------------------------------------   */
+/*   ----       BOX CONTAINER       ----   */
+.box_item {
+    box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+    border-radius: var(--border_radius);
+    box-sizing: border-box;
+}
+
+    /*   ----        BOX COLORS        ----   */
+
+        /*   ----        BOX COLORS BLUE        ----   */
+        .color_blue .summary_value {
+            color: var(--color_strong_blue);
+        }
+
+        .small_box_container .color_blue.summary_box_item {
+            border-left: 5px solid var(--color_strong_blue);
+        }
+
+        .standard_box_container, .big_box_container .color_blue.box_item {
+            border-top: 5px solid var(--color_strong_blue);
+        }
+
+        .standard_box_container, .big_box_container .color_blue .box_title h3 {
+            font-size: 1.2em;
+            color: var(--color_strong_blue);
+        }
+
+        /*   ----        BOX COLORS GREEN        ----   */
+        .color_green .summary_value {
+            color: var(--color_strong_green);
+        }
+
+        .small_box_container .color_green.summary_box_item {
+            border-left: 5px solid var(--color_strong_green);
+        }
+
+        .standard_box_container, .big_box_container .color_green.box_item {
+            border-top: 5px solid var(--color_strong_green);
+        }
+
+        .standard_box_container, .big_box_container .color_green .box_title h3 {
+            font-weight: bold;
+            color: var(--color_strong_green);
+        }
+
+        /*   ----        BOX COLORS YELLOW        ----   */
+        .color_yellow .summary_value {
+            color: var(--color_strong_yellow);
+        }
+
+        .small_box_container .color_yellow.summary_box_item {
+            border-left: 5px solid var(--color_strong_yellow);
+        }
+
+        .standard_box_container, .big_box_container .color_yellow.box_item {
+            border-top: 5px solid var(--color_strong_yellow);
+        }
+
+        .standard_box_container, .big_box_container .color_yellow .box_title h3 {
+            font-weight: bold;
+            color: var(--color_strong_yellow);
+        }
+
+        /*   ----        BOX COLORS RED        ----   */
+        .color_red .summary_value {
+            color: var(--color_strong_red);
+        }
+
+        .small_box_container .color_red.summary_box_item {
+            border-left: 5px solid var(--color_strong_red);
+        }
+
+        .standard_box_container, .big_box_container .color_red.box_item {
+            border-top: 5px solid var(--color_strong_red);
+        }
+
+        .standard_box_container, .big_box_container .color_red .box_title h3 {
+            font-weight: bold;
+            color: var(--color_strong_red);
+        }
+
+        /*   ----        BOX COLORS GRAY        ----   */
+        .color_gray .summary_value {
+            color: var(--color_strong_gray);
+        }
+
+        .small_box_container .color_gray.summary_box_item {
+            border-left: 5px solid var(--color_strong_gray);
+        }
+
+        .standard_box_container, .big_box_container .color_gray.box_item {
+            border-top: 5px solid var(--color_strong_gray);
+        }
+
+        .standard_box_container, .big_box_container .color_gray .box_title h3 {
+            font-weight: bold;
+            color: var(--color_strong_gray);
+        }
+
+    /*   ----       BOX - TABLE        ----   */
+    .box_table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .box_table tbody {
+        display: block;
+        overflow: auto;
+    }
+
+    .box_table tr {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    .box_table th, td {
+        padding: 15px 10px;
+        min-width: 100px;
+        text-align: center;
+    }
+
+        /*   ----       BOX TABLE - ANIMATIONS        ----   */
+        .box_table tr:hover {
+            background: var(--color_light_blue);
+        }
+
+
+/*   ------------------------------------   */
+/*   ----        SUMMARY BOX        ----   */
+.small_box_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.summary_box_item {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    background: var(--background_second);
+    padding: var(--main_padding) 15%;
+}
+
+.summary_title::after {
+    content: ':';
+}
+
+.summary_value {
+    padding-top: 10px;
+    color: var(--color_strong_gray);
+    font-size: 1.5em;
+}
+
+.summary_box_item i {
+    font-size: 30px;
+}
+
+
+
+/*   ------------------------------------   */
+/*   ----    STANDARD / BIG BOX     ----   */
+.box_title {
+    padding: 10px;
+    border-bottom: 1px solid var(--main_border);
+}
+
+.box_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid var(--main_border);
+}
+
+    /*   ----    STANDARD      ----   */
+    .standard_box_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .standard_box_container .box_item {
+        background: var(--background_second);
+    }
+
+    /*   ----       BIG BOX        ----   */
+    .big_box_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    .big_box_container .box_item {
+        background: var(--background_second);
+    }

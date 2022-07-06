@@ -1,0 +1,131 @@
+/*   -------------------------------   */
+/*   -----  MOBILE - SIDEBAR  -----   */
+
+    /*   -----   MEDIA >= 768px   -----   */
+    @media only screen and (max-width: 992px) {
+
+        #page {
+            flex-direction: column;         
+            /* overflow-y: auto; */
+        }
+
+        #page_content {
+            height: auto;
+        }
+
+        #page_bottom {
+            height: auto;
+        }
+
+        #sidebar {
+            /* display: none; */ 
+            height: auto;
+            width: 100%;
+            border: none;
+        }
+
+        #sidebar > div {
+            display: flex;
+            justify-content: center;
+        }
+
+        #main_menu {
+            margin: 10px;
+            display: flex;
+            justify-content: start;
+        }
+
+        #page_top {
+            height: 60px;
+            border-top: 1px solid rgb(187, 184, 184);
+        }
+
+        #sidebar_footer, #page_header {
+            display: none;
+        }
+
+        .menu_item:hover .menu_link {
+            border-radius: 10em;
+        }
+
+    }
+
+
+/*   --------------------------   */
+/*   -----   MOBILE   -----   */
+
+
+    /*   -----   MEDIA >= 768px   -----   */
+    @media only screen and (min-width: 768px) {
+
+        /*   ----       BOX CONTAINER - SMALL       ----   */
+        .small_box_container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 992px   -----   */
+    @media only screen and (min-width: 992px) {
+
+        /*   ----       BOX CONTAINER - SMALL       ----   */
+        .small_box_container {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1200px   -----   */
+    @media only screen and (min-width: 1200px) {
+
+        /*   ----       BOX CONTAINER - SMALL       ----   */
+        .small_box_container {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        /*   ----       BOX CONTAINER - STANDARD       ----   */
+        .standard_box_container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1400px   -----   */
+    @media only screen and (min-width: 1400px) {
+
+        /*   ----       BOX CONTAINER - SMALL       ----   */
+        .small_box_container {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1600px   -----   */
+    @media only screen and (min-width: 1600px) {
+
+        /*   ----       BOX CONTAINER - SMALL       ----   */
+        .small_box_container {
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1800px   -----   */
+    @media only screen and (min-width: 1800px) {
+
+        /*   ----       BOX CONTAINER - SMALL       ----   */
+        .small_box_container {
+            grid-template-columns: repeat(8, 1fr);
+        }
+
+        /*   ----       BOX CONTAINER - STANDARD       ----   */
+        .standard_box_container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
