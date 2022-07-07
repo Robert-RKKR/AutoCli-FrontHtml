@@ -101,7 +101,12 @@
     /*   ----       BOX - TABLE        ----   */
     .box_table {
         display: block;
-        overflow-x: auto;
+        overflow: auto;
+    }
+
+    .box_table tbody {
+        height: 400px;
+        overflow: auto;
     }
 
     .box_table tbody {
@@ -115,6 +120,14 @@
         width: 100%;
     }
 
+    .box_table > thead tr {
+        border-bottom: 3px solid rgb(0 0 0 / 0.15);
+    }
+
+    .box_table > tbody tr:not(:last-child) {
+        border-bottom: 1px solid rgb(0 0 0 / 0.08);
+    }
+
     .box_table th, td {
         padding: 15px 10px;
         min-width: 100px;
@@ -122,8 +135,8 @@
     }
 
         /*   ----       BOX TABLE - ANIMATIONS        ----   */
-        .box_table tr:hover {
-            background: var(--color_light_blue);
+        .box_table > tbody tr:hover {
+            background: rgb(0 0 0 / 0.08);
         }
 
 
@@ -132,8 +145,8 @@
 .small_box_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: 15px;
+    row-gap: 15px;
 }
 
 .summary_box_item {
@@ -180,8 +193,8 @@
     .standard_box_container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 10px;
-        row-gap: 10px;
+        column-gap: 15px;
+        row-gap: 15px;
     }
 
     .standard_box_container .box_item {
@@ -192,8 +205,6 @@
     .big_box_container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        column-gap: 10px;
-        row-gap: 10px;
     }
 
     .big_box_container .box_item {
