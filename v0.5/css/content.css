@@ -209,4 +209,63 @@
 
     .big_box_container .box_item {
         background: var(--background_second);
+        width: 100%;
+    }
+
+
+
+
+/*   ------------------------------------   */
+/*   ----            TABLE           ----   */
+
+
+
+    /*   -----   TABLE SETTINGS   -----   */
+    .table {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1 1 auto;
+    }
+  
+    .row {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        border-bottom: 1px solid var(--main_border);
+    }
+
+    .row_header {
+        border-bottom: 3px solid var(--main_border);
+    }
+  
+    .cell {
+        flex-grow: 1;
+        flex-basis: 0;
+        padding: 15px 10px;
+        word-wrap: break-word;
+        min-width: 10px;
+    }
+
+    /*   -----   TABLE COLORS   -----   */
+
+        /*   -----   GREEN   -----   */
+
+    /*   -----   TABLE NAVIGATION   -----   */
+    
+    /*   -----   CELLS OPTIONS   -----   */
+    .cell_2 {
+        flex-grow: 2;
+    }
+
+    .cell_3 {
+        flex-grow: 3;
+    }
+
+    .cell_4 {
+        flex-grow: 4;
+    }
+
+    .cell_5 {
+        flex-grow: 5;
     }

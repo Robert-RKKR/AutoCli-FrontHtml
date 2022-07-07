@@ -23,7 +23,7 @@
     --border_radius: 6px;
     --main_padding: 15px;
     /* rgba(0, 0, 0, 0.15) */
-    --main_border: rgb(200, 200, 200);
+    --main_border: rgb(200, 200, 200, 0.6);
 }
 
 html {

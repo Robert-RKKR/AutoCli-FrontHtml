@@ -1,0 +1,87 @@
+:root {
+    /* Main colors */
+    --background_first: #e9ecef;
+    --background_second: #ffffff;
+
+    /* Main font colors */
+    --font_color_main: #676869;
+
+    /* Light colors */
+    --color_light_blue: #c3e0f7;
+    --color_light_green: #a8f0cc;
+    --color_light_yellow: #ffefce;
+    --color_light_gray: #95a4c8;
+    --color_light_red: #f6c6d3;
+
+    /* Strong colors */
+    --color_strong_blue: #548be9;
+    --color_strong_green: #4db478;
+    --color_strong_yellow: #edbb57;
+    --color_strong_gray: #4e6f99;
+    --color_strong_red: #f66a83;
+
+    --border_radius: 6px;
+    --main_padding: 15px;
+    /* rgba(0, 0, 0, 0.15) */
+    --main_border: rgb(200, 200, 200, 0.6);
+}
+
+#page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    background: var(--background_first);
+}
+
+#left {
+    position: absolute;
+    display: none;
+    width: 230px;
+    height: 100vh;
+    background: red;
+}
+
+#right {
+    width: 100vw;
+    height: 100vh;
+    background: yellow;
+}
+
+#top {
+    width: 100%;
+    height: 6vh;
+    background: green;
+}
+
+#bottom {
+    height: 94vh;
+    background: blue;
+    overflow-y: auto;
+}
+
+#content {
+    padding: 10px;
+}
+
+
+.box_item {
+    overflow-y: auto;
+    background: wheat;
+}
+
+.box_table {
+    width: 100%;
+    display: table;
+}
+
+.box_table_row {
+    display: table-row;
+}
+
+.box_table_cell {
+    display: table-cell;
+    min-width: 90px;
+    padding: 10px;
+}
