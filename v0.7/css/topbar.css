@@ -1,0 +1,83 @@
+ /*   ------------------------------------   */
+/*   ----           TOPBAR           ----   */
+#page_top {
+    height: var(--page_top);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px calc(var(--main_distance) * 2);
+    border-bottom: var(--main_border);
+}
+
+#page_top i {
+    cursor: pointer;
+}
+
+#sidebar_action i {
+    font-size: 30px;
+}
+
+#objects_actions i {
+    font-size: 23px;
+}
+
+#objects_actions i:not(:first-child) {
+    margin-left: 20px;
+}
+
+    /*   ----           TOPBAR - USER PANEL           ----   */
+    #user_panel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #user_menu_foto {
+        height: calc(var(--page_top) - var(--main_distance) * 2);
+    }
+
+    #user_info {
+        padding-left: 10px;
+        border-left: var(--main_border);
+    }
+
+        /*   ----           TOPBAR - USER MENU           ----   */
+        #user_menu {
+            cursor: pointer;
+        }
+
+        #user_submenu {
+            position: absolute;
+            top: calc(var(--page_top) + 1px);
+            right: 40px;
+            background: var(--color_background_second);
+        }
+
+        .user_submenu_link {
+            display: flex;
+            align-items: center;
+            transition: all .5s;
+        }
+
+        .user_submenu_img {
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        .user_submenu_text {
+            padding: 10px 20px 10px 0px;
+        }
+
+        .user_submenu_item:not(:last-child) {
+            border-bottom: var(--main_border);
+        }
+
+            /*   -----   USER MENU ANIMATIONS   -----   */
+            #user_menu_item:hover {
+                background: var(--color_background_animation);
+            }
+
+            .user_submenu_link:hover {
+                transform: translate(5px, 0px);
+            }

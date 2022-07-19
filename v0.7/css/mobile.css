@@ -1,0 +1,123 @@
+/*   -------------------------------   */
+/*   -----  MOBILE - SIDEBAR  -----   */
+
+    /*   -----   MEDIA <= 768px   -----   */
+    @media only screen and (max-width: 768px) {
+
+        /*   ----     MAIN PAGE SETTINGS     ----   */
+        a, p, h1, h2, h3, h4, h5, h5, span, q, i {
+            font-size: 1.1em;
+        }
+
+        #page_content {
+            width: 100vw;
+            left: 0px;
+            transition: var(--animation_sidebar);
+        }
+
+        #sidebar.largebar ~ #page_content {
+            top: 100vh;
+            left: 0px;
+        }
+
+        #page_top {
+            height: 90px;
+        }
+
+        #page_bottom {
+            height: auto;
+            background: var(--color_background_first);
+        }
+
+        /*   ----     SIDEBAR     ----   */
+        #sidebar.smallbar {
+            display: none;
+        }
+
+        #sidebar.largebar {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            border-right: 0px;
+            transition: all 2s ease;
+        }
+
+    }
+
+
+/*   --------------------------   */
+/*   -----   MOBILE   -----   */
+
+
+    /*   -----   MEDIA >= 768px   -----   */
+    @media only screen and (min-width: 768px) {
+
+        
+
+    }
+
+
+    /*   -----   MEDIA >= 992px   -----   */
+    @media only screen and (min-width: 992px) {
+
+        
+        /*   ----        BOX CONTAINER - MENY       ----   */
+        .box_container_meny {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /*   ----        BOX CONTAINER - MAX THREE       ----   */
+        .box_container_three {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1200px   -----   */
+    @media only screen and (min-width: 1200px) {
+
+        /*   ----        BOX CONTAINER - MAX TWO       ----   */
+        .box_container_two {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1400px   -----   */
+    @media only screen and (min-width: 1400px) {
+
+        /*   ----        BOX CONTAINER - MENY       ----   */
+        .box_container_meny {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        /*   ----        BOX CONTAINER - MAX THREE       ----   */
+        .box_container_three {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1600px   -----   */
+    @media only screen and (min-width: 1600px) {
+
+        /*   ----        BOX CONTAINER - MENY       ----   */
+        .box_container_meny {
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+    }
+
+
+    /*   -----   MEDIA >= 1800px   -----   */
+    @media only screen and (min-width: 1800px) {
+
+        /*   ----        BOX CONTAINER - MENY       ----   */
+        .box_container_meny {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+    }

@@ -1,0 +1,65 @@
+ /*   ------------------------------------   */
+/*   ----       PAGE - CONTENT       ----   */
+#page_content {
+    position: absolute;
+    left: var(--sidebar);
+    width: calc(100% - var(--sidebar));
+    transition: var(--animation_sidebar);
+}
+
+#page_bottom {
+    height: calc(100vh - var(--page_top) - 1px);
+    background: var(--color_background_first);
+    overflow-y: auto;
+}
+
+#content {
+    padding: calc(var(--main_distance) * 2);
+}
+
+ /*   ------------------------------------   */
+/*   ----        BOX CONTAINER       ----   */
+[class^="box_container"] {
+    display: grid;
+    column-gap: var(--main_distance);
+    row-gap: var(--main_distance);
+    margin-bottom: calc(var(--main_distance) * 2);
+}
+
+.box_item {
+    background: var(--color_background_second);
+    padding: var(--main_distance);
+    border-radius: 5px;
+}
+
+    /*   ----        BOX CONTAINER - MAX ONE       ----   */
+    .box_container_one {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*   ----        BOX CONTAINER - MAX TWO       ----   */
+    .box_container_two {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*   ----        BOX CONTAINER - MAX THREE       ----   */
+    .box_container_three {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /*   ----        BOX CONTAINER - MENY       ----   */
+    .box_container_meny {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*   ----        BOX COLORS        ----   */
+
+        /*   ----        BOX COLORS - DEFAULT        ----   */
+        [class^="box_container"] .box_item {
+            border-top: var(--main_box_border) solid var(--color_strong_gray);
+        }
+
+        /*   ----        BOX COLORS - BLUE        ----   */
+        [class^="box_container"] .color_blue {
+            border-top: var(--main_box_border) solid var(--color_strong_blue);
+        }

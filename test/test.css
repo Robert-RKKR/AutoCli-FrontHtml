@@ -1,0 +1,116 @@
+:root {
+
+    --color_first: rgb(211, 209, 209);
+    --color_second: rgb(255, 255, 255);
+    --color_third: rgb(82, 128, 193);
+
+    --border: 1px solid var(--color_first);
+    --main_size: 15px;
+
+}
+
+p, q, i, h1, h2, h3 {
+    font-size: 1em;
+    color: #565757;
+    font-family: "Alegreya Sans SC", sans-serif;
+}
+
+#page {
+    width: 100vw;
+    height: 100vh;
+    background: var(--color_first);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.box_item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: var(--color_second);
+    border-top: 4px solid blue;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.box_panel {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.box_panel .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    transition: all .5s;
+}
+
+.box_panel .options .box_button:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.options.box_panel_hidden {
+    transform: translate(0px, -40px);
+}
+
+.box_button {
+    padding: 4px 12px;
+    cursor: pointer;
+    background: #ffffff;
+    border-left: var(--border);
+    border-bottom: var(--border);
+    border-bottom-left-radius: 0px;
+    transition: all .5s;
+}
+
+.active .box_button {
+    transition: all .5s;
+    border-top-right-radius: 2px;
+}
+
+.options.box_panel_hidden ~ .active .box_button {
+    border-bottom-left-radius: 5px;
+}
+
+.box_button:hover {
+    background: rgb(180, 200, 237);
+}
+
+.box_content {
+    padding: var(--main_size);
+}
+
+.box_content_title {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.box_content_values {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 0.9em;
+    margin-top: var(--main_size);
+}
+
+.box_content_values p {
+    padding: calc(var(--main_size) / 3) 0px;
+}
+
+.name {
+    color: var(--color_third);
+}
+
+.value {
+    margin-left: calc(var(--main_size) / 2);
+}
