@@ -1,0 +1,12 @@
+ /*   ------------------------------------   */
+/*   ----           TOPBAR           ----   */
+#page_top {
+    height: var(--page_top);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px calc(var(--main_distance) * 2);
+    border-bottom: var(--main_border);
+    background: var(--color_background_second);
+}

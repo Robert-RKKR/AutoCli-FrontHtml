@@ -1,0 +1,123 @@
+ /* --------------------------------------   */
+/*   ----        MAIN VALUES         ----   */
+:root {
+
+    /* Main page colors */
+    --color_page_first: #483628;
+    --color_page_second: #196825;
+
+    /* Main background colors */
+    --color_background_first: #e9ecef;
+    --color_background_second: #ffffff;
+
+    /* Main font colors 4f5e6c*/
+    --color_font_first: #676869;
+    --color_font_second: #676869;
+
+    /* Light colors */
+    --color_light_blue: #c3e0f7;
+    --color_light_green: #a8f0cc;
+    --color_light_yellow: #ffefce;
+    --color_light_violet: #d5a8f3;
+    --color_light_red: #f6c6d3;
+    --color_light_gray: #95a4c8;
+
+    /* Strong colors */
+    --color_strong_blue: #548be9;
+    --color_strong_green: #4db478;
+    --color_strong_yellow: #d29c30;
+    --color_strong_violet: #934bb7;
+    --color_strong_red: #f66a83;
+    --color_strong_gray: #4e6f99;
+
+    /* Animations values */
+    --animation_slow: all 0.9s ease;
+    --animation_middel: all 0.6s ease;
+    --animation_fast: all 0.3s ease;
+    --animation_sidebar: all 0.4s ease;
+
+    /* Main border values */
+    --main_border_radius: 6px;
+
+    /* Main values */
+    --main_distance: 15px;
+    --main_radius: 10px;
+    --main_box_border: 4px;
+    --main_border: 1px solid rgb(200, 200, 200);
+    --main_shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+
+    /* Main dimentions values */
+    --page_top: 60px;
+    --sidebar: 60px;
+    --sidebarf: 240px;
+}
+
+ /* --------------------------------------   */
+/*   ----      MAIN COMPONENTS       ----   */
+#page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: var(--color_background_first);
+}
+
+ /* --------------------------------------   */
+/*   ----       MAIN SETTINGS        ----   */
+a, p, h1, h2, h3, h4, h5, h5, span, q, i, input {
+    font-family: "Alegreya Sans SC", sans-serif;
+    color: var(--color_font_first);
+    font-size: 1em;
+}
+
+    /*   -----   PAGE SCROLL   -----   */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: rgb(244, 246, 246);
+        margin: var(--main_padding) 0px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(184, 186, 186);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(121, 123, 123);
+    }
+
+ /* --------------------------------------   */
+/*   ----        MAIN CLASSES        ----   */
+.collapse {
+    display: none;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+    /*   ----             ANIMATED BUTTON           ----   */
+    .animated_button {
+        transition: var(--animation_middel);
+        cursor: pointer;
+    }
+
+    .animated_button:hover {
+        transform: scale(1.2);
+    }
+
+    .animated_button:active {
+        transform: scale(0.99);
+    }
+
+    /*   ----             MARGIN           ----   */
+    .mb {
+        margin-bottom: var(--main_distance);
+    }
+
+    .mt {
+        margin-top: var(--main_distance);
+    }

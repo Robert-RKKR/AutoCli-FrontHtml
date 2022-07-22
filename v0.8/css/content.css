@@ -1,0 +1,17 @@
+ /*   ------------------------------------   */
+/*   ----       PAGE - CONTENT       ----   */
+#page_content {
+    position: absolute;
+    left: var(--sidebar);
+    width: calc(100% - var(--sidebar));
+    transition: var(--animation_sidebar);
+}
+
+#page_bottom {
+    height: calc(100vh - var(--page_top) - 1px);
+    overflow-y: auto;
+}
+
+#content {
+    padding: calc(var(--main_distance) * 2);
+}

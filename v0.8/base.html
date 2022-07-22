@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <!-- Basic page data -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Page title -->
+        <title>AutoCli - base</title>
+        
+        <!-- Custom CSS files -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="css/topbar.css">
+        <link rel="stylesheet" href="css/content.css">
+        <link rel="stylesheet" href="css/mobile.css">
+
+        <!-- Icons css link -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+        <!-- Favicon links -->
+
+    </head>
+
+    <body>
+
+        <!-- All page content -->
+        <div id="page">
+
+            <!-- Sidebar - left site of page (Left menu) -->
+            <header id="sidebar">
+
+                <!-- Sidebar - top part of sidebar containing logo and main menu -->
+                <div class="sidebar_item">
+                
+                    <div id="page_logo">
+                            
+                        <!-- Sidebar - main page logo -->
+                        <img id="page_logo_img" src="ico/logo/rkkr_logo.svg" alt="Menu">
+                        <h1>AutoCLI</h1>
+                        <i id="block_sidebar" class="animated_button bx bxs-pin"></i>
+
+                    </div>
+
+                    <!-- Sidebar - page main menu -->
+                    <nav id="main_menu">
+
+                        <ul>
+                            <li class="main_menu_item">
+                                <a href="#" class="main_menu_link">
+                                    <i class="main_menu_link_icon bx bxs-dashboard" ></i>
+                                    <p class="main_menu_link_text">Dashboard</p>
+                                    <span class="main_menu_link_info">23</span>
+                                </a>
+                            </li>
+
+                            <li class="main_menu_item">
+                                <a href="#" class="main_menu_link">
+                                    <i class="main_menu_link_icon bx bxs-user" ></i>
+                                    <p class="main_menu_link_text">Administration</p>
+                                </a>
+                            </li>
+
+                            <li class="main_menu_item">
+                                <a href="#" class="main_menu_link main_menu_submenu_link">
+                                    <i class="main_menu_link_icon bx bx-world" ></i>
+                                    <p class="main_menu_link_text">Automatization</p>
+                                    <i class="main_menu_link_submenu_icon bx bx-chevron-up" ></i>
+                                </a>
+                                <ul class="main_submenu collapse">
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Polices</p>
+                                        </a>
+                                    </li>
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Scheduler</p>
+                                        </a>
+                                    </li>
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Templetes</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="main_menu_item">
+                                <a href="#" class="main_menu_link main_menu_submenu_link">
+                                    <i class="main_menu_link_icon bx bxs-package"></i>
+                                    <p class="main_menu_link_text">Inventory</p>
+                                    <i class="main_menu_link_submenu_icon bx bx-chevron-up" ></i>
+                                </a>
+                                <ul class="main_submenu collapse">
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Devices</p>
+                                        </a>
+                                    </li>
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Groups</p>
+                                        </a>
+                                    </li>
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Credentials</p>
+                                        </a>
+                                    </li>
+                                    <li class="main_submenu_item">
+                                        <a href="#" class="main_submenu_link">
+                                            <i class="main_submenu_link_icon bx bxs-package"></i>
+                                            <p class="main_submenu_link_text">Settings</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="main_menu_item">
+                                <a href="#" class="main_menu_link">
+                                    <i class="main_menu_link_icon bx bxs-wrench" ></i>
+                                    <p class="main_menu_link_text">Settings</p>
+                                </a>
+                            </li>
+
+                            <li class="main_menu_item">
+                                <a href="#" class="main_menu_link">
+                                    <i class="main_menu_link_icon bx bxs-notepad" ></i>
+                                    <p class="main_menu_link_text">Documentation</p>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+                <!-- Sidebar - bottom part of sidebar containing user panel -->
+                <footer id="sidebar_footer" class="sidebar_item">
+                        
+                    <img id="user_menu_foto" class="animated_button" src="ico/model/users/business-woman.svg" alt="Menu">
+
+                </footer>
+
+            </header>
+
+            <!-- Main content - right site of page (Content) -->
+            <main id="page_content">
+                
+                <aside id="page_top">
+
+                    <div id="sidebar_search" class="page_top_item">
+                        <input type="search" id="site_search" placeholder="Search on the site..." name="q">
+                    </div>
+
+                    <div id="objects_actions" class="page_top_item">
+                        <i class="animated_button object_action bx bxs-plus-circle"></i>
+                        <i class="animated_button object_action bx bxs-minus-circle"></i>
+                        <i class="animated_button object_action bx bxs-edit"></i>
+                    </div>
+
+                    <div id="user_panel">
+
+                        <ul id="user_menu">
+                            <li>
+                                <p>Logo</p>
+                                <ul id="user_submenu" class="collapse">
+                                    <li class="user_submenu_item">
+                                        <a href="#" class="user_submenu_link">
+                                            <i class="user_submenu_img bx bx-menu"></i>
+                                            <span class="user_submenu_text">Logout</span>
+                                        </a>
+                                    </li>
+                                    <li class="user_submenu_item">
+                                        <a href="#" class="user_submenu_link">
+                                            <i class="user_submenu_img bx bx-menu"></i>
+                                            <span class="user_submenu_text">Account</span>
+                                        </a>
+                                    </li>
+                                    <li class="user_submenu_item">
+                                        <a href="#" class="user_submenu_link">
+                                            <i class="user_submenu_img bx bx-menu"></i>
+                                            <span class="user_submenu_text">User settings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <div id="user_info">
+                            <a>Robert Kucharski</a>
+                            <p>Administrator</p>
+                        </div>
+                        
+                    </div>
+
+                </aside>
+
+                <div id="page_bottom">
+
+                    <div id="content">
+
+                        <div class="box_container_meny margin_bottom">
+
+                            <article class="summary_box_item box_item color_blue">
+                                <div>
+                                    <h3 class="summary_title">Active devices</h3>
+                                    <p class="summary_value">1534</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_yellow">
+                                <div>
+                                    <h3 class="summary_title">Polices</h3>
+                                    <p class="summary_value">12</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_gray">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_red">
+                                <div>
+                                    <h3 class="summary_title">Actions</h3>
+                                    <p class="summary_value">15334</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                        </div>
+
+                        <div class="box_container_three margin_bottom">
+
+                            <article class="summary_box_item box_item color_blue">
+                                <div>
+                                    <h3 class="summary_title">Active devices</h3>
+                                    <p class="summary_value">1534</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_yellow">
+                                <div>
+                                    <h3 class="summary_title">Polices</h3>
+                                    <p class="summary_value">12</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_gray">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_red">
+                                <div>
+                                    <h3 class="summary_title">Actions</h3>
+                                    <p class="summary_value">15334</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                        </div>
+
+                        <div class="box_container_two margin_bottom">
+
+                            <article class="summary_box_item box_item color_blue">
+                                <div>
+                                    <h3 class="summary_title">Active devices</h3>
+                                    <p class="summary_value">1534</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_yellow">
+                                <div>
+                                    <h3 class="summary_title">Polices</h3>
+                                    <p class="summary_value">12</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_gray">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_red">
+                                <div>
+                                    <h3 class="summary_title">Actions</h3>
+                                    <p class="summary_value">15334</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                        </div>
+
+                        <div class="box_container_one margin_bottom">
+
+                            <article class="summary_box_item box_item color_blue">
+                                <div>
+                                    <h3 class="summary_title">Active devices</h3>
+                                    <p class="summary_value">1534</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_yellow">
+                                <div>
+                                    <h3 class="summary_title">Polices</h3>
+                                    <p class="summary_value">12</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_gray">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_red">
+                                <div>
+                                    <h3 class="summary_title">Actions</h3>
+                                    <p class="summary_value">15334</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                            <article class="summary_box_item box_item color_green">
+                                <div>
+                                    <h3 class="summary_title">Device groups</h3>
+                                    <p class="summary_value">34</p>
+                                </div>
+                                <i class='bx bx-menu' ></i>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+        </div>
+
+        <!-- JavaScript scripts -->
+        <script src="js/base_main.js"></script>
+
+    </body>
+</html>

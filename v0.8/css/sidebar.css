@@ -1,0 +1,155 @@
+ /*   ------------------------------------   */
+/*   ----       SIDEBAR - LOGO      ----   */
+#sidebar {
+    height: 100vh;
+    width: var(--sidebar);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border-right: var(--main_border);
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: var(--animation_sidebar);
+    background: var(--color_background_second);
+    z-index: 100;
+}
+
+#sidebar.sidebarf {
+    width: var(--sidebarf);
+}
+
+#sidebar.sidebar_blocked {  
+    width: var(--sidebarf);
+}
+
+#sidebar.sidebar_blocked ~ #page_content {  
+    left: var(--sidebarf);
+    width: calc(100% - var(--sidebarf));
+}
+
+ /*   ------------------------------------   */
+/*   ----       SIDEBAR - LOGO      ----   */
+#page_logo {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: var(--page_top);
+    margin-bottom: calc(var(--main_distance) * 3);
+    padding: 0px calc(var(--main_distance) / 2);
+}
+
+#page_logo h1 {
+    font-size: 1.6em;
+    margin-left: calc(var(--main_distance) * 2);
+}
+
+#page_logo_img {
+    height: calc(var(--sidebar) - var(--main_distance));
+    width: calc(var(--sidebar) - var(--main_distance));
+    transition: var(--animation_sidebar);
+}
+
+#block_sidebar {
+    opacity: 0;
+    position: absolute;
+    top: var(--main_distance);
+    color: var(--color_strong_gray);
+    right: var(--main_distance);
+    font-size: 1.4em;
+}
+
+#sidebar.sidebarf #block_sidebar {
+    opacity: 1;
+}
+
+#sidebar.sidebar_blocked #block_sidebar {
+    transform: rotate(90deg);
+    color: var(--color_strong_red);
+    opacity: 1;
+}
+
+
+/* --------------------------------------   */
+/*   ----    SIDEBAR - MAIN MENU    ----   */
+#main_menu { 
+    padding: 0px calc(var(--main_distance) / 2);
+}
+
+    /*   ----     MAIN MENU - FIRST LEVEL AND SUBMENU     ----   */
+    .main_menu_item, .main_submenu_item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: calc(var(--main_distance) / 2);
+    }
+
+    .main_menu_link, .main_submenu_link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: calc(var(--main_distance) / 2);
+        border-radius: var(--main_radius);
+        transition: var(--animation_middel);
+    }
+
+        /*   ----     MAIN MENU LINKS SETTINGS     ----   */
+        .main_menu_link span, .main_submenu_link span {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main_menu_link_icon, .main_submenu_link_icon {
+            font-size: calc(var(--sidebar) - 2 * var(--main_distance));
+        }
+
+        .main_menu_link_text, .main_submenu_link_text {
+            margin-left: var(--main_distance);
+        }
+
+    /*   ----     MAIN MENU - ANIMATIONS     ----   */
+    .main_menu_link:hover, .main_submenu_link:hover {
+        padding: calc(var(--main_distance)  / 2);
+        background: var(--color_background_first);
+    }
+
+    .main_menu_link:hover, .main_submenu_link:hover {
+        transform: translate(5px, 0px);
+    }
+
+    /*   ----     MAIN MENU - ICONS COLORS     ----   */
+    .main_menu_item:nth-child(5n+1) .main_menu_link_icon {
+        color: var(--color_strong_blue);
+    }
+
+    .main_menu_item:nth-child(5n+2) .main_menu_link_icon {
+        color: var(--color_strong_green);
+    }
+
+    .main_menu_item:nth-child(5n+3) .main_menu_link_icon {
+        color: var(--color_strong_yellow);
+    }
+
+    .main_menu_item:nth-child(5n+4) .main_menu_link_icon {
+        color: var(--color_strong_violet);
+    }
+
+    .main_menu_item:nth-child(5n+5) .main_menu_link_icon {
+        color: var(--color_strong_red);
+    }
+
+        /*   ----     MAIN SUBMENU - ICONS COLORS     ----   */
+        .main_submenu_link_icon {
+            color: var(--color_strong_gray);
+        }
+
+
+
+ /*   ------------------------------------   */
+/*   ----       SIDEBAR - USER       ----   */
+#user_menu_foto {
+    width: calc(var(--sidebar) - var(--main_distance));
+    padding: calc(var(--main_distance) / 2);
+}
