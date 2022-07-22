@@ -39,6 +39,7 @@
     height: var(--page_top);
     margin-bottom: calc(var(--main_distance) * 3);
     padding: 0px calc(var(--main_distance) / 2);
+    border-top: var(--main_border);
 }
 
 #page_logo h1 {
